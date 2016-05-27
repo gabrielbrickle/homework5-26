@@ -55,7 +55,7 @@ document.getElementById('answer4').innerHTML = listOfItems;
 
 
 var eightMaterials = items.filter(function(element,idx,arr) {
-  return element.materials <= 8
+  return element.materials >= 8
 }).map (function (element,idx,arr) {
   return element.quantity + element.materials + element.title
 });
