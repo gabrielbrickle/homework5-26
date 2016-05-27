@@ -33,7 +33,7 @@ document.getElementById('answer2').innerHTML = price14to18;
 var gbpCurrency = items.filter(function(element,idx,arr) {
   return element.currency_code === "GBP"
 }).map (function(element,idx,arr) {
-  return element.title + " " + element.price
+  return "NAME: " + element.title + " " + "PRICE: " + element.price
 });
 
 
@@ -55,7 +55,7 @@ document.getElementById('answer4').innerHTML = listOfItems;
 
 
 var eightMaterials = items.filter(function(element,idx,arr) {
-  return element.materials >= 8
+  return element.materials.length >= 8
 }).map (function (element,idx,arr) {
   return element.quantity + element.materials + element.title
 });
